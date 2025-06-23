@@ -29,7 +29,6 @@
 
 html {
   font-size: 62.5%;
-  min-width: 100vh;
 }
 
 ul[role="list"],
@@ -38,9 +37,6 @@ ol[role="list"] {
 }
 
 body {
-  min-height: 100vh;
-  width: 80vw;
-  margin: 0 auto;
   line-height: 1.5;
   font-size: var(--font-size-xl);
   -webkit-font-smoothing: antialiased;
@@ -54,6 +50,8 @@ body {
 #root {
   min-height: 100vh;
   min-width: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a:not([class]) {

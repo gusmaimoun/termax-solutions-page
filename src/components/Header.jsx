@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import termaxLogo from "../assets/images/termaxLogo.png";
 
 const StyledHeader = styled.header`
   width: 100%;
   height: 6rem;
+  box-shadow: 0 2px 4px rgba(6, 17, 118, 0.08),
+    0 4px 12px rgba(6, 17, 118, 0.08);
 `;
 
 const StyledNav = styled.nav`
@@ -31,6 +34,9 @@ function Header() {
     <StyledHeader>
       <StyledNav>
         <StyledUl>
+          <StyledLi>
+            <img src={termaxLogo} alt="Termax Logo" height={"50rem"} />
+          </StyledLi>
           <StyledLi>Inicio</StyledLi>
           <StyledLi>Productos</StyledLi>
           <StyledLi>eLearning</StyledLi>
