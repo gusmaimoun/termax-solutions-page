@@ -3,7 +3,7 @@ import termaxLogo from "../assets/images/termaxLogo.png";
 
 const StyledHeader = styled.header`
   width: 100%;
-  height: 6rem;
+  height: 5vh;
   box-shadow: 0 2px 4px rgba(6, 17, 118, 0.08),
     0 4px 12px rgba(6, 17, 118, 0.08);
 `;

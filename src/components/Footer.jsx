@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  color: red;
+  color: white;
+  background-color: #6527be;
+  height: 5vh;
 `;
 
 function Footer() {

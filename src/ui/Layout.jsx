@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Outlet } from "react-router";
 
 const StyledMain = styled.main`
   margin: 0 auto;
-  background-color: red;
-  width: 80vw;
-  flex-grow: 1;
+  width: 90vw;
+  height: 90vh;
 `;
 
-function Layout({ children }) {
+function Layout() {
   return (
     <>
       <Header />
-      <StyledMain>{children}</StyledMain>
+      <StyledMain>
+        <Outlet />
+      </StyledMain>
       <Footer />
     </>
   );
